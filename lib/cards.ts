@@ -1,0 +1,48 @@
+import { SpectrumCard } from './game'
+
+export const SPECTRUM_CARDS: SpectrumCard[] = [
+  { left: 'Cold', right: 'Hot' },
+  { left: 'Slow', right: 'Fast' },
+  { left: 'Quiet', right: 'Loud' },
+  { left: 'Evil', right: 'Good' },
+  { left: 'Ugly', right: 'Beautiful' },
+  { left: 'Simple', right: 'Complex' },
+  { left: 'Ancient', right: 'Modern' },
+  { left: 'Safe', right: 'Risky' },
+  { left: 'Cheap', right: 'Expensive' },
+  { left: 'Weak', right: 'Strong' },
+  { left: 'Small', right: 'Large' },
+  { left: 'Dry', right: 'Wet' },
+  { left: 'Sad', right: 'Happy' },
+  { left: 'Dirty', right: 'Clean' },
+  { left: 'Natural', right: 'Artificial' },
+  { left: 'Common', right: 'Rare' },
+  { left: 'Boring', right: 'Exciting' },
+  { left: 'Unhealthy', right: 'Healthy' },
+  { left: 'Obvious', right: 'Subtle' },
+  { left: 'Logical', right: 'Emotional' },
+  { left: 'Formal', right: 'Casual' },
+  { left: 'Hard', right: 'Soft' },
+  { left: 'Dark', right: 'Light' },
+  { left: 'Salty', right: 'Sweet' },
+  { left: 'Cluttered', right: 'Minimal' },
+  { left: 'Pessimistic', right: 'Optimistic' },
+  { left: 'Chaotic', right: 'Orderly' },
+  { left: 'Unknown', right: 'Famous' },
+  { left: 'Cowardly', right: 'Brave' },
+  { left: 'Old', right: 'Young' },
+  { left: 'Rough', right: 'Smooth' },
+  { left: 'Opaque', right: 'Transparent' },
+  { left: 'Fragile', right: 'Durable' },
+  { left: 'Selfish', right: 'Generous' },
+  { left: 'Arrogant', right: 'Humble' },
+  { left: 'Serious', right: 'Playful' },
+  { left: 'Literal', right: 'Figurative' },
+  { left: 'Abstract', right: 'Concrete' },
+  { left: 'Shy', right: 'Bold' },
+  { left: 'Passive', right: 'Aggressive' },
+]
+
+export function randomCard(): SpectrumCard {
+  return SPECTRUM_CARDS[Math.floor(Math.random() * SPECTRUM_CARDS.length)]
+}
