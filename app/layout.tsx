@@ -3,7 +3,17 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Wavelength',
-  description: 'The spectrum-guessing game — play with AI or watch AIs play each other.',
+  description: 'A clue points somewhere on a spectrum. How well can you tune in?',
+  openGraph: {
+    title: 'Wavelength',
+    description: 'A clue points somewhere on a spectrum. How well can you tune in?',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Wavelength',
+    description: 'A clue points somewhere on a spectrum. How well can you tune in?',
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
